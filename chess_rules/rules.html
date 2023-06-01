@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>西洋棋規則</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="textbox">
+            <div class="container">
+                <h1>西洋棋規則</h1>
+            </div>
+            <p>
+                西洋棋是世界上最古老的遊戲之一，經過兩千年的演變，成為現在的樣子。
+            </p>
+            <p>
+                雙方<span class="red">三十二顆棋</span>在這<span class="red">六十四格</span>的戰場上，展開激烈的戰爭。
+                雙方棋子列出陣隊、相互牽制、並漸漸向對方壓迫，兩邊軍隊來來回回爭奪戰場控制，以及吃下對方士兵。
+                隨著一方攻勢擴大，擊潰另一方防線，最後在君主的指揮下，將對方國王困死，取下最終的勝利。
+            </p>
+            <p>
+                僅僅<span class="red">八乘八的棋盤</span>和<span class="red">六種棋子</span>，和簡短的規則，西洋棋卻能編織出天文數字的可能性，每走一步都是一場前所未有的局面。
+                西洋棋常被認為是智力的展現，因為它考驗雙方棋手的棋藝和計算棋子著法的能力，以下是西洋棋的簡易規則和戰術，希望能激起您對西洋棋的興趣。
+            </p>
+            
+
+
+            <h2>
+                遊戲進程
+            </h2>
+
+            <h3>
+                棋盤擺設
+            </h3>
+            <p>
+                西洋棋的流程非常簡單。開始遊戲的第一步就是將棋盤擺好，它應該會如下圖這樣
+            </p>
+            <div class="container">
+                <img src="img_1.png" alt="board">
+            </div>
+                <p>
+                    首先確認最右下角的格子為淺色格
+                </p>
+                <p>
+                    接著在第一排擺上白方的棋子，由左至右分別是「城堡、騎士、主教、皇后、國王、主教、騎士、城堡」，第二排則全擺上「兵」。
+                </p>
+                <p>
+                    最後把白色棋子的擺法完全對稱到對面，擺上黑色的棋子，棋盤擺設就大功告成了。
+                </p>
+
+            <h3>
+                對弈
+            </h3>
+            <p>
+                西洋棋總共兩個人，一人擔任白方，另一人擔任黑方。
+                由白方開始，接著換黑方，接下來雙方輪流下。
+            </p>
+            <p>
+                在每一回合，玩家可以移動任意一顆棋子到它可以移動到的地方(後面會介紹棋子的著法)，但是同一格最多一顆棋。
+                棋子不能下到其他自己棋子的位子，若落到堆方的棋子上，則可以將其拿下，這樣叫做「吃子」。
+                而若該步會造成自己國王被「攻擊」(下一步對方可以吃下國王)，則為不合法而不能下。
+            </p>
+            <div class="container">
+                <img src="img_2.png" alt="board">
+                <p>圖中正中央主教可吃左上方黑兵，但不可下到左下方自己方小兵的位置</p>
+            </div>
+            <p>
+                西洋棋的最終目標則是將死對方國王，即為攻擊對方國王(稱為「將軍」)，並讓對方國王無論如何跑或其他子如何下都會在下一步被吃，這樣即為取得勝利。
+            </p>
+            
+
+
+
+            <h2>
+                棋子著法
+            </h2>
+
+            <h3>
+                兵(pawn)
+            </h3>
+            <p>
+                兵是西洋棋中最多也是最弱的一顆子，它的功用主要是為其他棋子做盾牌用，並在開局時盡可能佔場地。
+                雖然它是最弱的棋子，卻也是特殊規則最多的子，同時也是最可能將遊戲翻盤的子。
+            </p>
+            <p>
+                兵最基本的走法就是往前走一格，當兵前面沒有敵方或我方子時都可以向前走一格。
+            </p>
+            <div id="img_slide_1" class="container">
+                <img src="img_3.png" alt="pawn move" class="img">
+            </div>
+            <div class="container" style="margin: 30px;">
+                <div class="button container" style="align-content: center;" onclick="swap_1(-1)">
+                    <h1 style="position: relative;left: -18px;"><</h1>
+                </div>
+                <div style="width: 50px;"></div>
+                <div class="button container" style="align-content: center;" onclick="swap_1(1)">
+                    <h1 style="position: relative;left: -18px;">></h1>
+                </div>
+            </div>
+            <div style="height: 30px"></div>
+
+            <div class="container">
+                <img src="img_5.png" alt="pawn move" class="img">
+            </div>
+            <p>
+                但是兵在初始位置也就是第二排時，在前面無子的情況下可以向前走兩步
+            </p>
+
+            <div id="img_slide_2" class="container">
+                <img src="img_6.png" alt="pawn move" class="img">
+            </div>
+            <div class="container" style="margin: 30px;">
+                <div class="button container" style="align-content: center;" onclick="swap_2(-1)">
+                    <h1 style="position: relative;left: -18px;"><</h1>
+                </div>
+                <div style="width: 50px;"></div>
+                <div class="button container" style="align-content: center;" onclick="swap_2(1)">
+                    <h1 style="position: relative;left: -18px;">></h1>
+                </div>
+            </div>
+            <div style="height: 30px"></div>
+
+            <div class="container">
+                <img src="img_8.png" alt="pawn move" class="img">
+            </div>
+
+            <p>若兵要吃子，則必須在斜前方一格有對方子時，吃下對方的子。</p>
+
+            <div id="img_slide_3" class="container">
+                <img src="img_9.png" alt="pawn move" class="img">
+            </div>
+            <div class="container" style="margin: 30px;">
+                <div class="button container" style="align-content: center;" onclick="swap_3(-1)">
+                    <h1 style="position: relative;left: -18px;"><</h1>
+                </div>
+                <div style="width: 50px;"></div>
+                <div class="button container" style="align-content: center;" onclick="swap_3(1)">
+                    <h1 style="position: relative;left: -18px;">></h1>
+                </div>
+            </div>
+            <div style="height: 30px"></div>
+
+            <p>
+                而西洋棋中最奇特也最鮮為人知的規則叫「吃過路兵(en_passant)」。
+                當敵方有一顆兵用第一步可以走兩隔的方法時，剛好落在我方兵的旁邊，則我方兵可以向斜前走一格，並吃下該敵人兵。
+            </p>
+
+            <div id="img_slide_4" class="container">
+                <img src="img_11.png" alt="pawn move" class="img">
+            </div>
+            <div class="container" style="margin: 30px;">
+                <div class="button container" style="align-content: center;" onclick="swap_4(-1)">
+                    <h1 style="position: relative;left: -18px;"><</h1>
+                </div>
+                <div style="width: 50px;"></div>
+                <div class="button container" style="align-content: center;" onclick="swap_4(1)">
+                    <h1 style="position: relative;left: -18px;">></h1>
+                </div>
+            </div>
+            <div style="height: 30px"></div>
+
+            <p>
+                最後，兵最強的一步則是「升變(promote)」。
+                當兵一路走到最後一排時，可以選擇變成「騎士、主教、城堡、皇后」其一。
+                由於皇后是西洋棋最強的一顆子，通常都會升變成皇后，稱為「變皇后」(queening)，特殊情況下變為其他子則稱為「低升變」(underpromotion)
+            </p>
+
+            <div id="img_slide_5" class="container">
+                <img src="img_13.png" alt="pawn move" class="img">
+            </div>
+            <div class="container" style="margin: 30px;">
+                <div class="button container" style="align-content: center;" onclick="swap_5(-1)">
+                    <h1 style="position: relative;left: -18px;"><</h1>
+                </div>
+                <div style="width: 50px;"></div>
+                <div class="button container" style="align-content: center;" onclick="swap_5(1)">
+                    <h1 style="position: relative;left: -18px;">></h1>
+                </div>
+            </div>
+            <div style="height: 30px"></div>
+
+            <p>
+                總結來說，雖然兵是西洋棋最弱的棋，但也是潛在價值最高的棋。
+                在西洋棋中兵的價值站1分，但是當它升變後價值則是升變後的棋子的價值。
+            </p>
+
+            <h3>
+                騎士(knight)
+            </h3>
+            <h3>
+                主教(bishop)
+            </h3>
+            <h3>
+                城堡(rook)
+            </h3>
+            <h3>
+                皇后(queen)
+            </h3>
+            <h3>
+                國王(king)
+            </h3>
+            
+            <h2>
+                簡單戰術
+            </h2>
+        </div>
+    </div>
+    
+    <script src="swap.js"></script>
+</body>
+</html>

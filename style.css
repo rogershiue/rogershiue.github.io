@@ -5,7 +5,6 @@ body{
     background-size: 100% 100%;
 }
 
-
 .container{
     display: flex;
     flex-wrap: wrap;

@@ -1,0 +1,12 @@
+計畫
+1. show piece moves (done)
+2. move the pieces (done)
+3. drag the pieces
+4. leagle move check (done)
+5. mate check (done)
+6. show notaon
+7. move via notation
+8. swap side
+9. mobile
+10. improve visual
+5/20

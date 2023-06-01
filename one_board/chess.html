@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="black_king.png">
+        <title>西洋棋</title>
+    </head>
+    <body style="background-color: black;">
+        <div style="display: flex;">
+            <div class="container" id="chess_board" width: 640px; height: 640px style="position: relative;left: 30px; border:30px solid crimson; border-radius: 4px; width: 640px; height: 640px; min-width: 640px; min-height: 640px">
+                <!-- todo: place js here -->
+                <!-- todo: use absolute position instead of flex -->
+            </div>
+            <div>
+                <div width: 100px; height: 320px id="black_value" class="container" style=" position: relative; left : 10px; top: 10px ; width: 100px; height: 64px; min-width: 100px; min-height: 64px;">
+
+                </div>
+                <div width: 100px; height: 320px id="promote_div" style=" position: relative; left : 10px; top: 120px ; width: 100px; height: 320px; min-width: 100px; min-height: 320px;">
+    
+                </div>
+                <div width: 100px; height: 320px id="white_value" class="container" style=" position: relative; left : 10px; top: 200px ; width: 100px; height: 64px; min-width: 100px; min-height: 64px;">
+                    
+                </div>
+            </div>
+            
+            <div width: 600px; height: 640px class="container" style="position: relative;top: 32px;background-color: rgb(48, 48, 48); border-radius: 16px; width: 600px; height: 640px; min-width: 400px; min-height: 640px">
+                <h1 style="margin: 10px;">著法紀錄</h1>
+                <div width: 600px; height: 520px id="notation" style="overflow-y: overlay; margin: 32px;margin-top: 0px; background-color: rgb(24, 24, 24); width: 600px; height: 520px; min-width: 400px; min-height: 520px">
+                </div>
+            </div>
+        </div>
+
+        <!-- chess board -->
+        <script src="chess_board.js"></script>
+        <script src="piece_moves.js"></script>
+        <script src="the_game.js"></script>
+    </body>
+</html>

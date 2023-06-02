@@ -46,6 +46,16 @@ p{
     padding: 0px;
 }
 
+.rank{
+    position: absolute;
+    left: -35px;
+}
+
+.file{
+    position: absolute;
+    top: 623px;
+}
+
 .white{
     color: snow;
     font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif, '微軟正黑體';

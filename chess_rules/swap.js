@@ -13,6 +13,24 @@ var slide_4_num = 0
 var slide_5 = document.getElementById("img_slide_5")
 var slide_5_num = 0
 
+var slide_6 = document.getElementById("img_slide_6")
+var slide_6_num = 0
+
+var slide_7 = document.getElementById("img_slide_7")
+var slide_7_num = 0
+
+var slide_8 = document.getElementById("img_slide_8")
+var slide_8_num = 0
+
+var slide_9 = document.getElementById("img_slide_9")
+var slide_9_num = 0
+
+var slide_10 = document.getElementById("img_slide_10")
+var slide_10_num = 0
+
+var slide_11 = document.getElementById("img_slide_11")
+var slide_11_num = 0
+
 function swap_1(delta){
     var slides = [`<img src="img_3.png" alt="pawn move" class="img">`, `<img src="img_4.png" alt="pawn move" class="img">`]
     if (slide_1_num + delta >= 0 && slide_1_num + delta < slides.length) {
@@ -51,4 +69,52 @@ function swap_5(delta){
         slide_5_num += delta
     }
     slide_5.innerHTML = slides[slide_5_num]
+}
+
+function swap_6(delta){
+    var slides = [`<img src="img_16.png" alt="knight move" class="img">`, `<img src="img_17.png" alt="knight move" class="img">`]
+    if (slide_6_num + delta >= 0 && slide_6_num + delta < slides.length) {
+        slide_6_num += delta
+    }
+    slide_6.innerHTML = slides[slide_6_num]
+}
+
+function swap_7(delta){
+    var slides = [`<img src="img_18.png" alt="knight move" class="img">`, `<img src="img_19.png" alt="knight move" class="img">`]
+    if (slide_7_num + delta >= 0 && slide_7_num + delta < slides.length) {
+        slide_7_num += delta
+    }
+    slide_7.innerHTML = slides[slide_7_num]
+}
+
+function swap_8(delta){
+    var slides = [`<img src="img_20.png" alt="knight move" class="img">`, `<img src="img_21.png" alt="knight move" class="img">`]
+    if (slide_8_num + delta >= 0 && slide_8_num + delta < slides.length) {
+        slide_8_num += delta
+    }
+    slide_8.innerHTML = slides[slide_8_num]
+}
+
+function swap_9(delta){
+    var slides = [`<img src="img_22.png" alt="knight move" class="img">`, `<img src="img_23.png" alt="knight move" class="img">`]
+    if (slide_9_num + delta >= 0 && slide_9_num + delta < slides.length) {
+        slide_9_num += delta
+    }
+    slide_9.innerHTML = slides[slide_9_num]
+}
+
+function swap_10(delta){
+    var slides = [`<img src="img_24.png" alt="knight move" class="img">`, `<img src="img_25.png" alt="knight move" class="img">`]
+    if (slide_10_num + delta >= 0 && slide_10_num + delta < slides.length) {
+        slide_10_num += delta
+    }
+    slide_10.innerHTML = slides[slide_10_num]
+}
+
+function swap_11(delta){
+    var slides = [`<img src="img_26.png" alt="knight move" class="img">`, `<img src="img_27.png" alt="knight move" class="img">`]
+    if (slide_11_num + delta >= 0 && slide_11_num + delta < slides.length) {
+        slide_11_num += delta
+    }
+    slide_11.innerHTML = slides[slide_11_num]
 }

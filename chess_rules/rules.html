@@ -23,7 +23,7 @@
             </p>
             <p>
                 僅僅<span class="red">八乘八的棋盤</span>和<span class="red">六種棋子</span>，和簡短的規則，西洋棋卻能編織出天文數字的可能性，每走一步都是一場前所未有的局面。
-                西洋棋常被認為是智力的展現，因為它考驗雙方棋手的棋藝和計算棋子著法的能力，以下是西洋棋的簡易規則和戰術，希望能激起您對西洋棋的興趣。
+                西洋棋常被認為是智力的展現，因為它考驗雙方棋手的棋藝和計算棋子著法的能力，以下是西洋棋的簡易規則，希望能激起您對西洋棋的興趣。
             </p>
             
 
@@ -79,7 +79,7 @@
             </h2>
 
             <h3>
-                兵(pawn)
+                ♙ 兵(pawn)
             </h3>
             <p>
                 兵是西洋棋中最多也是最弱的一顆子，它的功用主要是為其他棋子做盾牌用，並在開局時盡可能佔場地。
@@ -144,7 +144,7 @@
             <div style="height: 30px"></div>
 
             <p>
-                而西洋棋中最奇特也最鮮為人知的規則叫「吃過路兵(en_passant)」。
+                而西洋棋中最奇特也最鮮為人知的規則叫「吃過路兵(en passant)」。
                 當敵方有一顆兵用第一步可以走兩隔的方法時，剛好落在我方兵的旁邊，則我方兵可以向斜前走一格，並吃下該敵人兵。
             </p>
 
@@ -188,26 +188,161 @@
             </p>
 
             <h3>
-                騎士(knight)
+                ♘ 騎士(knight)
             </h3>
+            <p>
+                騎士的走法很特殊，跟象棋的馬一樣，騎士一次可以往一個方向走兩格，然後轉90度再走一格。
+                和象棋不一樣的是，騎士在任何情況下皆可以跳過棋子到達可移動的格，而不用擔心拐馬腳。
+                而騎士的走法和吃法一致，只要目的格子有敵方的子就可以吃下，若是我方棋子則不能移動到該格。
+            </p>
+
+            <div id="img_slide_6" class="container">
+                <img src="img_16.png" alt="pawn move" class="img">
+            </div>
+            <div class="container" style="margin: 30px;">
+                <div class="button container" style="align-content: center;" onclick="swap_6(-1)">
+                    <h1 style="position: relative;left: -18px;"><</h1>
+                </div>
+                <div style="width: 50px;"></div>
+                <div class="button container" style="align-content: center;" onclick="swap_6(1)">
+                    <h1 style="position: relative;left: -18px;">></h1>
+                </div>
+            </div>
+            <div style="height: 30px"></div>
+
+            <p>
+                騎士在西洋棋中價值佔3點。
+                雖然它沒辦法長程移動，但是在被很多棋子包夾的情況下，它能跳過子的能力就非常好用。
+                因為它的走法最特殊，也使它成為最難以捉摸的棋子。
+            </p>
+
             <h3>
-                主教(bishop)
+                ♗ 主教(bishop)
             </h3>
-            <h3>
-                城堡(rook)
-            </h3>
-            <h3>
-                皇后(queen)
-            </h3>
-            <h3>
-                國王(king)
-            </h3>
+
+            <p>
+                主教的移動很簡單，它可以左前、左後、右前、右後四個方向斜著走，途中撞到自己的棋子必須停下來，若是對方的棋子則可以吃下。
+                由於主教是斜著走，以及棋盤的設計，在淺色格上的主教永遠只能待在淺色格上，而深色格主教只能待在深色格上。
+            </p>
             
-            <h2>
+            <div id="img_slide_7" class="container">
+                <img src="img_18.png" alt="pawn move" class="img">
+            </div>
+            <div class="container" style="margin: 30px;">
+                <div class="button container" style="align-content: center;" onclick="swap_7(-1)">
+                    <h1 style="position: relative;left: -18px;"><</h1>
+                </div>
+                <div style="width: 50px;"></div>
+                <div class="button container" style="align-content: center;" onclick="swap_7(1)">
+                    <h1 style="position: relative;left: -18px;">></h1>
+                </div>
+            </div>
+            <div style="height: 30px"></div>
+
+            <p>
+                主教的價值一樣是3點，它可以長程移動，而且斜的移動也讓它可以在棋子間穿梭，常常在很遠的地方瞄準別人的棋子，讓人猝不及防。
+            </p>
+
+            <h3>
+                ♖ 城堡(rook)
+            </h3>
+            <p>
+                城堡是西洋棋中次強的棋子，它可以上下左右四個方向走任意格。和主教類似，途中有我方棋不能越過，有敵方棋則可以吃下。
+            </p>
+
+            <div id="img_slide_8" class="container">
+                <img src="img_20.png" alt="pawn move" class="img">
+            </div>
+            <div class="container" style="margin: 30px;">
+                <div class="button container" style="align-content: center;" onclick="swap_8(-1)">
+                    <h1 style="position: relative;left: -18px;"><</h1>
+                </div>
+                <div style="width: 50px;"></div>
+                <div class="button container" style="align-content: center;" onclick="swap_8(1)">
+                    <h1 style="position: relative;left: -18px;">></h1>
+                </div>
+            </div>
+            <div style="height: 30px"></div>
+
+            <p>
+                城堡價值5點，一開始可能沒什麼作用，但是隨著場上棋子被淨空，城堡就可以出來大殺四方。
+                因為城堡是垂直水平移動，當阻礙少時，城堡可以直接佔據一整排的。
+            </p>
+
+            <h3>
+                ♕ 皇后(queen)
+            </h3>
+            <p>
+                皇后是最猛的一顆棋子，它可以像水平、垂直、斜向的任何方向移動，基本上就是城堡和主教的綜合體。
+            </p>
+
+            <div id="img_slide_9" class="container">
+                <img src="img_22.png" alt="pawn move" class="img">
+            </div>
+            <div class="container" style="margin: 30px;">
+                <div class="button container" style="align-content: center;" onclick="swap_9(-1)">
+                    <h1 style="position: relative;left: -18px;"><</h1>
+                </div>
+                <div style="width: 50px;"></div>
+                <div class="button container" style="align-content: center;" onclick="swap_9(1)">
+                    <h1 style="position: relative;left: -18px;">></h1>
+                </div>
+            </div>
+            <div style="height: 30px"></div>
+
+            <p>
+                皇后價值為9點，也就是城堡加主教的價值在加一點。
+                當皇后在場中央時，可以攻擊場上幾乎一半的格子，控場能力極強，而它可以走八個方位的能力也使它的靈活性極高。
+                不過也因為它是最強的棋子，它也最容易成為攻擊目標，而我方也會費勁全力去保護它。
+            </p>
+
+            <h3>
+                ♔ 國王(king)
+            </h3>
+
+            <p>
+                最後是國王，國王是最重要的一顆棋，它的安全決定了這場棋的輸贏。
+                不過國王自身卻極弱，只能向水平、垂直或斜向走一格。
+            </p>
+
+            <div id="img_slide_10" class="container">
+                <img src="img_24.png" alt="pawn move" class="img">
+            </div>
+            <div class="container" style="margin: 30px;">
+                <div class="button container" style="align-content: center;" onclick="swap_10(-1)">
+                    <h1 style="position: relative;left: -18px;"><</h1>
+                </div>
+                <div style="width: 50px;"></div>
+                <div class="button container" style="align-content: center;" onclick="swap_10(1)">
+                    <h1 style="position: relative;left: -18px;">></h1>
+                </div>
+            </div>
+            <div style="height: 30px"></div>
+
+            <p>
+                國王有一個特殊動法，必須搭配著城堡一起做，叫做「王車易位」。
+                若國王和城堡都沒有移動過，且中間的格子沒有任何棋子，這些格子也沒被對方攻擊到，即可進行王車易位。
+            </p>
+
+            <div id="img_slide_11" class="container">
+                <img src="img_26.png" alt="pawn move" class="img">
+            </div>
+            <div class="container" style="margin: 30px;">
+                <div class="button container" style="align-content: center;" onclick="swap_11(-1)">
+                    <h1 style="position: relative;left: -18px;"><</h1>
+                </div>
+                <div style="width: 50px;"></div>
+                <div class="button container" style="align-content: center;" onclick="swap_11(1)">
+                    <h1 style="position: relative;left: -18px;">></h1>
+                </div>
+            </div>
+            <div style="height: 30px"></div>
+
+            <!-- <h2>
                 簡單戰術
             </h2>
         </div>
-    </div>
+    </div> -->
     
     <script src="swap.js"></script>
 </body>

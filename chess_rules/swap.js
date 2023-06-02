@@ -31,6 +31,9 @@ var slide_10_num = 0
 var slide_11 = document.getElementById("img_slide_11")
 var slide_11_num = 0
 
+var slide_12 = document.getElementById("img_slide_12")
+var slide_12_num = 0
+
 function swap_1(delta){
     var slides = [`<img src="img_3.png" alt="pawn move" class="img">`, `<img src="img_4.png" alt="pawn move" class="img">`]
     if (slide_1_num + delta >= 0 && slide_1_num + delta < slides.length) {
@@ -117,4 +120,12 @@ function swap_11(delta){
         slide_11_num += delta
     }
     slide_11.innerHTML = slides[slide_11_num]
+}
+
+function swap_12(delta){
+    var slides = [`<img src="img_28.png" alt="knight move" class="img">`, `<img src="img_29.png" alt="knight move" class="img">`]
+    if (slide_12_num + delta >= 0 && slide_12_num + delta < slides.length) {
+        slide_12_num += delta
+    }
+    slide_12.innerHTML = slides[slide_12_num]
 }

@@ -9,9 +9,26 @@
 </head>
 <body>
     <div class="container">
+        <div class="menu">
+            <div class="container" >
+                <a href="#rules" style="text-decoration: none;"><p class="item"><b>選單</b></p></a>
+            </div>
+                <a href="#process" style="text-decoration: none;"><p class="item first">遊戲進程</p></a>
+                <a href="#setup" style="text-decoration: none;"><p class="item second">棋盤擺設</p></a>
+                <a href="#chessing" style="text-decoration: none;"><p class="item second">對弈</p></a>
+                <a href="#moves" style="text-decoration: none;"><p class="item first">棋子著法</p></a>
+                <a href="#pawn" style="text-decoration: none;"><p class="item second">兵</p></a>
+                <a href="#knight" style="text-decoration: none;"><p class="item second">騎士</p></a>
+                <a href="#bishop" style="text-decoration: none;"><p class="item second">主教</p></a>
+                <a href="#rook" style="text-decoration: none;"><p class="item second">城堡</p></a>
+                <a href="#queen" style="text-decoration: none;"><p class="item second">皇后</p></a>
+                <a href="#king" style="text-decoration: none;"><p class="item second">國王</p></a>                
+            
+            
+        </div>
         <div class="textbox">
             <div class="container">
-                <h1>西洋棋規則</h1>
+                <h1 id="rules">西洋棋規則</h1>
             </div>
             <p>
                 西洋棋是世界上最古老的遊戲之一，經過兩千年的演變，成為現在的樣子。
@@ -28,11 +45,11 @@
             
 
 
-            <h2>
+            <h2 id="process">
                 遊戲進程
             </h2>
 
-            <h3>
+            <h3 id="setup">
                 棋盤擺設
             </h3>
             <p>
@@ -51,7 +68,7 @@
                     最後把白色棋子的擺法完全對稱到對面，擺上黑色的棋子，棋盤擺設就大功告成了。
                 </p>
 
-            <h3>
+            <h3 id="chessing">
                 對弈
             </h3>
             <p>
@@ -74,11 +91,11 @@
 
 
 
-            <h2>
+            <h2 id="moves">
                 棋子著法
             </h2>
 
-            <h3>
+            <h3 id="pawn">
                 ♙ 兵(pawn)
             </h3>
             <p>
@@ -143,6 +160,8 @@
             </div>
             <div style="height: 30px"></div>
 
+            <p><b>吃過路兵(en passant)</b></p>
+
             <p>
                 而西洋棋中最奇特也最鮮為人知的規則叫「吃過路兵(en passant)」。
                 當敵方有一顆兵用第一步可以走兩隔的方法時，剛好落在我方兵的旁邊，則我方兵可以向斜前走一格，並吃下該敵人兵。
@@ -161,6 +180,8 @@
                 </div>
             </div>
             <div style="height: 30px"></div>
+
+            <p><b>升變(promote)</b></p>
 
             <p>
                 最後，兵最強的一步則是「升變(promote)」。
@@ -187,7 +208,7 @@
                 在西洋棋中兵的價值站1分，但是當它升變後價值則是升變後的棋子的價值。
             </p>
 
-            <h3>
+            <h3 id="knight">
                 ♘ 騎士(knight)
             </h3>
             <p>
@@ -216,7 +237,7 @@
                 因為它的走法最特殊，也使它成為最難以捉摸的棋子。
             </p>
 
-            <h3>
+            <h3 id="bishop">
                 ♗ 主教(bishop)
             </h3>
 
@@ -243,7 +264,7 @@
                 主教的價值一樣是3點，它可以長程移動，而且斜的移動也讓它可以在棋子間穿梭，常常在很遠的地方瞄準別人的棋子，讓人猝不及防。
             </p>
 
-            <h3>
+            <h3 id="rook">
                 ♖ 城堡(rook)
             </h3>
             <p>
@@ -269,7 +290,7 @@
                 因為城堡是垂直水平移動，當阻礙少時，城堡可以直接佔據一整排的。
             </p>
 
-            <h3>
+            <h3 id="queen">
                 ♕ 皇后(queen)
             </h3>
             <p>
@@ -296,7 +317,7 @@
                 不過也因為它是最強的棋子，它也最容易成為攻擊目標，而我方也會費勁全力去保護它。
             </p>
 
-            <h3>
+            <h3 id="king">
                 ♔ 國王(king)
             </h3>
 
@@ -319,8 +340,10 @@
             </div>
             <div style="height: 30px"></div>
 
+            <p><b>王車易位(castle)</b></p>
+
             <p>
-                國王有一個特殊動法，必須搭配著城堡一起做，叫做「王車易位」。
+                國王有一個特殊動法，必須搭配著城堡一起做，叫做「王車易位(castle)」。
                 若國王和城堡都沒有移動過，且中間的格子沒有任何棋子，這些格子也沒被對方攻擊到，即可進行王車易位。
             </p>
 
@@ -338,11 +361,41 @@
             </div>
             <div style="height: 30px"></div>
 
+            <p><b>將軍(check)</b></p>
+
+            <p>
+                當國王被敵方棋子攻擊時，稱為「將軍(check)」。
+                此時國王必須移開來躲避，或用其他棋子擋住對方棋子，或直接吃掉對方棋子。
+            </p>
+
+            <div id="img_slide_12" class="container">
+                <img src="img_28.png" alt="pawn move" class="img">
+            </div>
+            <div class="container" style="margin: 30px;">
+                <div class="button container" style="align-content: center;" onclick="swap_12(-1)">
+                    <h1 style="position: relative;left: -18px;"><</h1>
+                </div>
+                <div style="width: 50px;"></div>
+                <div class="button container" style="align-content: center;" onclick="swap_12(1)">
+                    <h1 style="position: relative;left: -18px;">></h1>
+                </div>
+            </div>
+            <div style="height: 30px"></div>
+
+            <p><b>將死(checkmate)</b></p>
+
+            <p>當國王被將軍，但是國王怎麼逃或動任何一顆棋都會讓國王被將軍，即為「將死(checkmate)」，也是遊戲結束。</p>
+
+            <div class="container">
+                <img src="img_30.png" alt="mate">
+            </div>
+            
+
             <!-- <h2>
                 簡單戰術
-            </h2>
+            </h2> -->
         </div>
-    </div> -->
+    </div>
     
     <script src="swap.js"></script>
 </body>

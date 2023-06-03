@@ -23,9 +23,9 @@ for (let i = 0; i < 8; i++) {
 }
 
 for (let i = 0; i < 8; i++) {
-    chess_board.innerHTML += `<p class="rank" style="top: ${80 * i}px;">${8 - i}</p>`
+    chess_board.innerHTML += `<p class="rank" style="top: ${80 * i}px;">${i + 1}</p>`
 }
 
 for (let i = 0; i < 8; i++) {
-    chess_board.innerHTML += `<p class="file" style="left: ${80 * i + 20}px;">${files[i]}</p>`
+    chess_board.innerHTML += `<p class="file" style="left: ${80 * i + 20}px;">${files[7 - i]}</p>`
 }
